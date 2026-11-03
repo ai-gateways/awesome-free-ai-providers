@@ -9,6 +9,7 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 ## Contents
 
 - [At a Glance](#at-a-glance)
+- [Combining Free Tiers](#combining-free-tiers)
 - [Free Tiers](#free-tiers)
 - [Routers and Community Networks](#routers-and-community-networks)
 - [Signup and Trial Credits](#signup-and-trial-credits)
@@ -71,6 +72,14 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 | [Voyage AI](#voyage-ai)                                   | 200M tokens per account                 | No          | Not stated        |
 | [Z.AI](#zai)                                              | Free GLM Flash models                   | Not stated  | Yes               |
 | [Zhipu BigModel](#zhipu-bigmodel)                         | Free GLM Flash models                   | Not stated  | Yes               |
+
+## Combining Free Tiers
+
+Each free tier has its own limits, and most are small: Groq's free plan allows 1,000 requests a day per model, OpenRouter's free models 50 a day without purchased credits, and SambaNova's free tier 20. An AI gateway in front of several providers lets one application use them together through one OpenAI-compatible endpoint and move to another provider when one hits its limit.
+
+[Bifrost](https://github.com/maximhq/bifrost#key-features) is an open source gateway (`Apache-2.0`, `Go`) that supports many of the providers in this list, including Gemini, Groq, Mistral, Cohere, Cerebras, Cloudflare Workers AI, Nebius, and OpenRouter ([supported providers](https://docs.getbifrost.ai/providers/supported-providers/overview#provider-support-matrix)), and reaches other OpenAI-compatible endpoints as custom providers ([custom providers](https://docs.getbifrost.ai/providers/custom-providers#base-provider-types)). When a provider fails, including on a `429` rate limit or an exhausted quota, Bifrost retries it and then moves the request to the next provider in your fallback chain ([retries and fallbacks](https://docs.getbifrost.ai/features/retries-and-fallbacks#overview)). Its complexity router sorts each request into a Simple, Medium, or Complex tier, so routing rules can send simple requests to a small free model and save the larger models' limited quota for harder ones ([complexity router](https://docs.getbifrost.ai/features/complexity-router#overview)).
+
+Other gateways are listed in [Awesome AI Gateways](https://github.com/ai-gateways/awesome-ai-gateways#ai-gateways). Check each provider's terms before sending production traffic through any of them, since several free tiers are for evaluation only.
 
 ## Free Tiers
 
