@@ -10,7 +10,7 @@ Corrections and new providers are welcome, from both users and vendors. Free tie
 Out of scope:
 
 - Local runtimes and downloadable models with no hosted API.
-- Consumer chat apps, IDEs, and coding assistants with no public API, and tools that reach them through scraping or reused logins.
+- Consumer chat apps, IDEs, and coding assistants with no public API, and tools that reach them through scraping or reused logins. Free models that only work in a provider's own client are listed when the provider also runs a public API, and the entry says so.
 - Relays that resell access to closed models from other vendors without a stated arrangement with those vendors.
 - Services with no named operator in their terms, and offers that end within 30 days.
 
