@@ -22,59 +22,60 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 
 ## At a Glance
 
-| Provider                                                  | Free offer                              | Card needed | OpenAI-compatible |
-| --------------------------------------------------------- | --------------------------------------- | ----------- | ----------------- |
-| [AI Horde](#ai-horde)                                     | Volunteer-run image and text generation | No          | Text only         |
-| [AI21 Labs](#ai21-labs)                                   | $10 trial credit                        | No          | Not stated        |
-| [Aion Labs](#aion-labs)                                   | Free tier with a daily allowance        | No          | Yes               |
-| [Alibaba Cloud Model Studio](#alibaba-cloud-model-studio) | 1M tokens per model for 90 days         | Not stated  | Yes               |
-| [Amazon Bedrock](#amazon-bedrock)                         | Up to $200 of AWS credit                | Usually no  | Yes               |
-| [AssemblyAI](#assemblyai)                                 | $50 credit                              | No          | Not stated        |
-| [Baichuan](#baichuan)                                     | 10M tokens for 3 months                 | Not stated  | Yes               |
-| [Bytez](#bytez)                                           | $1 of credit every 4 weeks              | Not stated  | Yes               |
-| [Cerebras](#cerebras)                                     | $5 credit for 30 days                   | Yes         | Yes               |
-| [Cloudflare Workers AI](#cloudflare-workers-ai)           | 10,000 Neurons a day                    | Not stated  | Yes               |
-| [Cohere](#cohere)                                         | Trial key, 1,000 calls a month          | No          | Yes               |
-| [Deepgram](#deepgram)                                     | $200 credit                             | No          | Not stated        |
-| [ElevenLabs](#elevenlabs)                                 | 10,000 credits a month                  | Not stated  | Not stated        |
-| [Gonka Broker](#gonka-broker)                             | 1M tokens a month                       | No          | Yes               |
-| [Google Cloud](#google-cloud)                             | $300 credit for 90 days                 | Yes         | Yes               |
-| [Google Gemini API](#google-gemini-api)                   | Free tier on Flash models               | Not stated  | Yes               |
-| [Groq](#groq)                                             | Free plan                               | Not stated  | Yes               |
-| [IBM watsonx.ai](#ibm-watsonxai)                          | 300,000 tokens a month                  | Yes         | Gateway only      |
-| [iFlytek Spark](#iflytek-spark)                           | Spark Lite model                        | Not stated  | Yes               |
-| [Inception](#inception)                                   | 100M tokens                             | No          | Yes               |
-| [Infomaniak](#infomaniak)                                 | 1M credits for one month                | Yes         | Yes               |
-| [Jina AI](#jina-ai)                                       | 10M tokens per key                      | Not stated  | Embeddings only   |
-| [Kilo Code](#kilo-code)                                   | Free models, no account needed          | No          | Yes               |
-| [Liquid AI](#liquid-ai)                                   | $2 credit                               | Not stated  | Not stated        |
-| [Microsoft Azure](#microsoft-azure)                       | $200 credit for 30 days                 | Yes         | Yes               |
-| [Mistral AI](#mistral-ai)                                 | Free mode                               | No          | Not stated        |
-| [ModelScope](#modelscope)                                 | 2,000 calls a day                       | Not stated  | Yes               |
-| [Nebius](#nebius)                                         | $25 credit                              | Yes         | Yes               |
-| [NVIDIA API Catalog](#nvidia-api-catalog)                 | Free access for prototyping             | No          | Yes               |
-| [OpenCode Console](#opencode-console)                     | Free models in the OpenCode client      | Not stated  | Paid models only  |
-| [OpenRouter](#openrouter)                                 | Free model variants                     | Not stated  | Yes               |
-| [Oracle Cloud](#oracle-cloud)                             | $300 credit for 30 days                 | Yes         | Yes               |
-| [OVHcloud AI Endpoints](#ovhcloud-ai-endpoints)           | Calls without a key at 2 RPM            | No          | Yes               |
-| [Pollinations](#pollinations)                             | Credit earned through quests            | No          | Yes               |
-| [Public AI](#public-ai)                                   | $2 credit                               | Not stated  | Yes               |
-| [Puter.js](#puterjs)                                      | Each user's own free allowance          | Not stated  | No                |
-| [Reka](#reka)                                             | 3 hours of video on the Vision API      | Not stated  | Chat only         |
-| [Requesty](#requesty)                                     | 13 free models                          | No          | Yes               |
-| [SambaNova Cloud](#sambanova-cloud)                       | Free tier                               | No          | Yes               |
-| [Scaleway](#scaleway)                                     | 1M tokens and 60 audio minutes          | Not stated  | Yes               |
-| [SEA-LION](#sea-lion)                                     | Free proof-of-concept API               | Not stated  | Yes               |
-| [SenseNova](#sensenova)                                   | Free Token Plan beta                    | Not stated  | Yes               |
-| [SiliconFlow](#siliconflow)                               | $1 credit                               | Not stated  | Yes               |
-| [SiliconFlow China](#siliconflow-china)                   | Free models and a 16 CNY voucher        | Not stated  | Yes               |
-| [Speechmatics](#speechmatics)                             | $100 credit for 12 months               | No          | Not stated        |
-| [Tencent TokenHub](#tencent-tokenhub)                     | 1M tokens per model for 1 year          | Not stated  | Yes               |
-| [Upstage](#upstage)                                       | $10 credit                              | Not stated  | Yes               |
-| [Volcengine Ark](#volcengine-ark)                         | Free trial quota per model              | Not stated  | Yes               |
-| [Voyage AI](#voyage-ai)                                   | 200M tokens per account                 | No          | Not stated        |
-| [Z.AI](#zai)                                              | Free GLM Flash models                   | Not stated  | Yes               |
-| [Zhipu BigModel](#zhipu-bigmodel)                         | Free GLM Flash models                   | Not stated  | Yes               |
+| Provider                                                  | Free offer                                | Card needed | OpenAI-compatible |
+| --------------------------------------------------------- | ----------------------------------------- | ----------- | ----------------- |
+| [AI Horde](#ai-horde)                                     | Volunteer-run image and text generation   | No          | Text only         |
+| [AI21 Labs](#ai21-labs)                                   | $10 trial credit                          | No          | Not stated        |
+| [Aion Labs](#aion-labs)                                   | Free tier with a daily allowance          | No          | Yes               |
+| [Alibaba Cloud Model Studio](#alibaba-cloud-model-studio) | 1M tokens per model for 90 days           | Not stated  | Yes               |
+| [Amazon Bedrock](#amazon-bedrock)                         | Up to $200 of AWS credit                  | Usually no  | Yes               |
+| [AssemblyAI](#assemblyai)                                 | $50 credit                                | No          | Not stated        |
+| [Baichuan](#baichuan)                                     | 10M tokens for 3 months                   | Not stated  | Yes               |
+| [Bytez](#bytez)                                           | $1 of credit every 4 weeks                | Not stated  | Yes               |
+| [Cerebras](#cerebras)                                     | $5 credit for 30 days                     | Yes         | Yes               |
+| [Cline](#cline)                                           | Free model promotions in the Cline client | Not stated  | Paid models only  |
+| [Cloudflare Workers AI](#cloudflare-workers-ai)           | 10,000 Neurons a day                      | Not stated  | Yes               |
+| [Cohere](#cohere)                                         | Trial key, 1,000 calls a month            | No          | Yes               |
+| [Deepgram](#deepgram)                                     | $200 credit                               | No          | Not stated        |
+| [ElevenLabs](#elevenlabs)                                 | 10,000 credits a month                    | Not stated  | Not stated        |
+| [Gonka Broker](#gonka-broker)                             | 1M tokens a month                         | No          | Yes               |
+| [Google Cloud](#google-cloud)                             | $300 credit for 90 days                   | Yes         | Yes               |
+| [Google Gemini API](#google-gemini-api)                   | Free tier on Flash models                 | Not stated  | Yes               |
+| [Groq](#groq)                                             | Free plan                                 | Not stated  | Yes               |
+| [IBM watsonx.ai](#ibm-watsonxai)                          | 300,000 tokens a month                    | Yes         | Gateway only      |
+| [iFlytek Spark](#iflytek-spark)                           | Spark Lite model                          | Not stated  | Yes               |
+| [Inception](#inception)                                   | 100M tokens                               | No          | Yes               |
+| [Infomaniak](#infomaniak)                                 | 1M credits for one month                  | Yes         | Yes               |
+| [Jina AI](#jina-ai)                                       | 10M tokens per key                        | Not stated  | Embeddings only   |
+| [Kilo Code](#kilo-code)                                   | Free models, no account needed            | No          | Yes               |
+| [Liquid AI](#liquid-ai)                                   | $2 credit                                 | Not stated  | Not stated        |
+| [Microsoft Azure](#microsoft-azure)                       | $200 credit for 30 days                   | Yes         | Yes               |
+| [Mistral AI](#mistral-ai)                                 | Free mode                                 | No          | Not stated        |
+| [ModelScope](#modelscope)                                 | 2,000 calls a day                         | Not stated  | Yes               |
+| [Nebius](#nebius)                                         | $25 credit                                | Yes         | Yes               |
+| [NVIDIA API Catalog](#nvidia-api-catalog)                 | Free access for prototyping               | No          | Yes               |
+| [OpenCode Console](#opencode-console)                     | Free models in the OpenCode client        | Not stated  | Paid models only  |
+| [OpenRouter](#openrouter)                                 | Free model variants                       | Not stated  | Yes               |
+| [Oracle Cloud](#oracle-cloud)                             | $300 credit for 30 days                   | Yes         | Yes               |
+| [OVHcloud AI Endpoints](#ovhcloud-ai-endpoints)           | Calls without a key at 2 RPM              | No          | Yes               |
+| [Pollinations](#pollinations)                             | Credit earned through quests              | No          | Yes               |
+| [Public AI](#public-ai)                                   | $2 credit                                 | Not stated  | Yes               |
+| [Puter.js](#puterjs)                                      | Each user's own free allowance            | Not stated  | No                |
+| [Reka](#reka)                                             | 3 hours of video on the Vision API        | Not stated  | Chat only         |
+| [Requesty](#requesty)                                     | 13 free models                            | No          | Yes               |
+| [SambaNova Cloud](#sambanova-cloud)                       | Free tier                                 | No          | Yes               |
+| [Scaleway](#scaleway)                                     | 1M tokens and 60 audio minutes            | Not stated  | Yes               |
+| [SEA-LION](#sea-lion)                                     | Free proof-of-concept API                 | Not stated  | Yes               |
+| [SenseNova](#sensenova)                                   | Free Token Plan beta                      | Not stated  | Yes               |
+| [SiliconFlow](#siliconflow)                               | $1 credit                                 | Not stated  | Yes               |
+| [SiliconFlow China](#siliconflow-china)                   | Free models and a 16 CNY voucher          | Not stated  | Yes               |
+| [Speechmatics](#speechmatics)                             | $100 credit for 12 months                 | No          | Not stated        |
+| [Tencent TokenHub](#tencent-tokenhub)                     | 1M tokens per model for 1 year            | Not stated  | Yes               |
+| [Upstage](#upstage)                                       | $10 credit                                | Not stated  | Yes               |
+| [Volcengine Ark](#volcengine-ark)                         | Free trial quota per model                | Not stated  | Yes               |
+| [Voyage AI](#voyage-ai)                                   | 200M tokens per account                   | No          | Not stated        |
+| [Z.AI](#zai)                                              | Free GLM Flash models                     | Not stated  | Yes               |
+| [Zhipu BigModel](#zhipu-bigmodel)                         | Free GLM Flash models                     | Not stated  | Yes               |
 
 ## Combining Free Tiers
 
@@ -90,7 +91,7 @@ Each free tier has its own limits, and most are small: Groq's free plan allows 1
 | IBM watsonx.ai        | 300,000              | Monthly Lite allowance                             |
 | **Total**             | **About 58,500,000** |                                                    |
 
-One-time grants add about 117.5 million tokens: Inception 100 million, Baichuan 10 million, Alibaba Cloud Model Studio 6 million (1 million on each of six language models), Tencent TokenHub at least 1 million (1 million per language model), and Volcengine Ark 500,000. Not counted are tiers whose limits appear only after sign-in (Google Gemini API, Mistral AI, NVIDIA API Catalog, OpenCode Console, Z.AI, and Zhipu BigModel), tiers that cap requests rather than tokens (Cohere, Kilo Code, ModelScope, OpenRouter, OVHcloud AI Endpoints, Requesty, SEA-LION, and SenseNova), dollar credits, and embedding grants.
+One-time grants add about 117.5 million tokens: Inception 100 million, Baichuan 10 million, Alibaba Cloud Model Studio 6 million (1 million on each of six language models), Tencent TokenHub at least 1 million (1 million per language model), and Volcengine Ark 500,000. Not counted are tiers whose limits are not public (Cline, Google Gemini API, Mistral AI, NVIDIA API Catalog, OpenCode Console, Z.AI, and Zhipu BigModel), tiers that cap requests rather than tokens (Cohere, Kilo Code, ModelScope, OpenRouter, OVHcloud AI Endpoints, Requesty, SEA-LION, and SenseNova), dollar credits, and embedding grants.
 
 An AI gateway in front of several providers lets one application use them together through one OpenAI-compatible endpoint and move to another provider when one hits its limit.
 
@@ -304,6 +305,20 @@ Volunteer-run network for image and text generation that anyone can use, includi
 | Data use          | Workers can technically see prompts ([FAQ](https://github.com/Haidra-Org/AI-Horde/blob/main/FAQ.md#can-workers-spy-on-my-prompts-or-generations)). Anonymous text-to-image generations are always shared with LAION ([terms](https://aihorde.net/terms#:~:text=always%20when%20using%20this%20service%20anonymously)). |
 | Commercial use    | Paid services built on the Horde are allowed with restrictions, per the FAQ.                                                                                                                                                                                                                                           |
 | Verified          | 2026-11-03                                                                                                                                                                                                                                                                                                             |
+
+### Cline
+
+Rotating free model promotions inside the Cline coding agent, up to a usage quota.
+
+| Field             | Detail                                                                                                                                                                                               |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Free              | Limited-time free model promotions for anyone with a Cline account, up to a limited usage quota. The models rotate ([free models](https://docs.cline.bot/getting-started/free-models#how-it-works)). |
+| Models            | Not named on the free models page. Free models carry a FREE tag in the model selector of the Cline and ClinePass providers.                                                                          |
+| Limits            | The quota amount is not published.                                                                                                                                                                   |
+| Requires          | A Cline account and the Cline IDE extension or CLI. Free usage is not supported through the Cline API, per the free models page.                                                                     |
+| OpenAI-compatible | Paid models only, `https://api.cline.bot/api/v1/chat/completions` ([API models](https://docs.cline.bot/api/models#model-id-format)).                                                                 |
+| Data use          | Free model usage may be used to improve model performance and quality.                                                                                                                               |
+| Verified          | 2026-11-03                                                                                                                                                                                           |
 
 ### Gonka Broker
 
