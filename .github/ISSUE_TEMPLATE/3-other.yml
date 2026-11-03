@@ -1,0 +1,10 @@
+name: Other feedback
+description: A question or idea about the list, its sections, or how it is checked.
+labels: ["question"]
+body:
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+    validations:
+      required: true

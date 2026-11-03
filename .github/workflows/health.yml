@@ -1,0 +1,27 @@
+name: List health
+
+# Rechecks the whole list every Monday: broken links, moved anchors, format problems, entries whose
+# Verified date is more than 90 days old, and offers whose stated end date has passed. Errors and
+# due re-checks open or update one "List health report" issue; warnings stay in the run summary.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check every entry
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/review.py full README.md --issue

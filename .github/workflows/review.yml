@@ -1,0 +1,43 @@
+name: Review pull request
+
+# pull_request_target runs the checker from the base branch so it can comment on pull requests
+# from forks. The pull request's README is fetched through the API and read as data; no code
+# from the pull request is checked out or executed.
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number to review
+        required: true
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: review-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the base branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js for awesome-lint
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Review entries and post the result
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr }}
+        run: python3 .github/scripts/review.py pr --pr "$PR_NUMBER" --lint --post --summary

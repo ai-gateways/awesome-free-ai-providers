@@ -1,0 +1,76 @@
+name: Suggest a provider
+description: Suggest an AI model API that gives something away for free.
+title: "Suggest: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Every fact in the list comes from the provider's own public page, so the most useful thing you can add is a link to the exact section that states each one. The rules are in [contributing.md](https://github.com/ai-gateways/awesome-free-ai-providers/blob/main/contributing.md#what-belongs-here).
+  - type: input
+    id: name
+    attributes:
+      label: Provider name
+      placeholder: Example AI
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Page that states the free offer
+      description: The provider's own pricing, rate-limit, or docs page, ideally linked to the exact section.
+      placeholder: https://example.ai/docs/pricing#free-tier
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Free Tiers
+        - Routers and Community Networks
+        - Signup and Trial Credits
+        - Cloud Trial Credits
+        - Mainland China Platforms
+        - Embeddings and Rerankers
+        - Speech
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: free
+    attributes:
+      label: What is free
+      description: The free tier, free models, or credit amount, and when it expires or resets.
+      placeholder: 1,000 requests a day on these models, resetting daily. No expiry stated.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Limits and requirements
+      description: RPM, RPD, TPM, TPD, monthly caps, and what you need to sign up (card, phone, region). Leave out anything the provider does not publish.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: One link per fact, each to the exact section of the provider's page.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: How you are connected to the provider.
+      placeholder: No affiliation / I work there
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: The free offer is live today and stated on a public page that does not need a sign-in.
+          required: true
+        - label: The provider runs its own service, or has a stated arrangement with the vendors whose models it serves.
+          required: true

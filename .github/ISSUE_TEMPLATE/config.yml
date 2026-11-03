@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution guidelines
+    url: https://github.com/ai-gateways/awesome-free-ai-providers/blob/main/contributing.md#what-belongs-here
+    about: What qualifies for the list and how entries are written and sourced.
+  - name: Open a pull request instead
+    url: https://github.com/ai-gateways/awesome-free-ai-providers/blob/main/contributing.md#pull-requests
+    about: If you can edit README.md yourself, a pull request is the fastest way; an automated review checks it within minutes.

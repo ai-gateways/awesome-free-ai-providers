@@ -1,0 +1,57 @@
+name: Report changed limits or an ended offer
+description: A limit, credit, or model changed, an offer ended, or a link broke.
+title: "Update: "
+labels: ["entry update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Free tiers change often, so these reports keep the list useful. Please link the provider's page that shows the current value.
+  - type: input
+    id: name
+    attributes:
+      label: Provider name
+      description: As it appears in the list.
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: What changed
+      options:
+        - Limits or amounts changed
+        - Free models added or removed
+        - Free offer ended
+        - Sign-up requirements changed (card, phone, region)
+        - Data-use or commercial-use terms changed
+        - Link broken or section moved
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the list says now
+      description: Copy the row or sentence that is out of date.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: The provider's page that shows the change, linked to the exact section.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      placeholder: No affiliation / I work there / I work at a competitor
+    validations:
+      required: true
