@@ -81,7 +81,7 @@ One sentence that says what is free.
    - [awesome-lint](https://github.com/sindresorhus/awesome-lint#usage) on the whole list.
 2. **Maintainer review.** A maintainer opens the sources and checks what a script cannot: that each row matches its page, that the offer is live and the operator is named, and that the wording is neutral.
 
-Warnings do not block a merge. Some provider pages render with JavaScript or block automated requests, so the bot cannot confirm their anchors; a maintainer checks those by hand.
+A pull request cannot be merged until the automated review has no problems left to fix. Warnings do not block a merge. Some provider pages render with JavaScript or block automated requests, so the bot cannot confirm their anchors; a maintainer checks those by hand.
 
 ### Check your entry locally
 

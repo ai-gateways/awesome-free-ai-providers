@@ -11,11 +11,13 @@ A short handbook for maintainers. Contributors should read [contributing.md](../
 | [Check main](workflows/check.yml) | Pushes to `main` that touch the README | Format checks and awesome-lint, no network | The workflow run (red if broken) |
 | [Dependabot](dependabot.yml) | Monthly | Opens pull requests to update GitHub Actions versions | Pull requests |
 
+Branch protection on `main` requires the `review` check from Review pull request to pass before a pull request can merge. Admins can still bypass it from the merge box or push to `main` directly. Change it under Settings, Branches.
+
 Every check lives in one standard-library Python script, [scripts/review.py](scripts/review.py). Issue forms are in [ISSUE_TEMPLATE](ISSUE_TEMPLATE) and the pull request template is [pull_request_template.md](pull_request_template.md).
 
 ## Reviewing a pull request
 
-1. Read the bot comment. `needs changes` means the contributor has something to fix; wait for a push. `ready for review` means the format is right and every link loads.
+1. Read the bot comment. `needs changes` means the contributor has something to fix, and GitHub keeps the merge button disabled; wait for a push. `ready for review` means the format is right and every link loads.
 2. Open each source link in the changed entry and confirm the row says what the page says. This is the part the bot cannot do.
 3. Check the judgment calls: the offer is live today, the operator is named in the terms, the provider is not a relay of closed models, and the section fits.
 4. If the entry adds a token cap or a one-time token grant, update the table and totals in Combining Free Tiers and the two figures in the intro (or ask the contributor to).
