@@ -4,6 +4,8 @@
 
 What each provider gives away, where the limits are, what you need to sign up, and whether free-tier prompts may be used for training. Every fact links to the provider's own page. Entries are sorted alphabetically within each section.
 
+Added together, the free tiers that publish token caps give at least 58 million tokens a month, and one-time signup grants add about 117 million more. Most other free tiers cap requests rather than tokens, or show their limits only after sign-in, so the real total is higher. The breakdown is under Combining Free Tiers.
+
 Free offers change often. This list reflects the providers' pages as of **November 2026**, and each entry shows the date it was last checked. RPM, RPD, TPM, and TPD mean requests or tokens per minute or per day. "Not published" means the provider's public pages do not give the value, often because it appears only after sign-in.
 
 ## Contents
@@ -51,6 +53,7 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 | [ModelScope](#modelscope)                                 | 2,000 calls a day                       | Not stated  | Yes               |
 | [Nebius](#nebius)                                         | $25 credit                              | Yes         | Yes               |
 | [NVIDIA API Catalog](#nvidia-api-catalog)                 | Free access for prototyping             | No          | Yes               |
+| [OpenCode Console](#opencode-console)                     | Free models in the OpenCode client      | Not stated  | Paid models only  |
 | [OpenRouter](#openrouter)                                 | Free model variants                     | Not stated  | Yes               |
 | [Oracle Cloud](#oracle-cloud)                             | $300 credit for 30 days                 | Yes         | Yes               |
 | [OVHcloud AI Endpoints](#ovhcloud-ai-endpoints)           | Calls without a key at 2 RPM            | No          | Yes               |
@@ -75,7 +78,21 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 
 ## Combining Free Tiers
 
-Each free tier has its own limits, and most are small: Groq's free plan allows 1,000 requests a day per model, OpenRouter's free models 50 a day without purchased credits, and SambaNova's free tier 20. An AI gateway in front of several providers lets one application use them together through one OpenAI-compatible endpoint and move to another provider when one hits its limit.
+Each free tier has its own limits, and most are small: Groq's free plan allows 1,000 requests a day per model, OpenRouter's free models 50 a day without purchased credits, and SambaNova's free tier 20. Only six providers in this list publish their free limits in tokens. Over a 30-day month, they add up to about 58.5 million tokens:
+
+| Provider              | Free tokens a month  | Basis                                              |
+| --------------------- | -------------------- | -------------------------------------------------- |
+| SambaNova Cloud       | 30,000,000           | 200,000 TPD on each of 5 models                    |
+| Groq                  | 18,000,000           | 200,000 TPD on each of 3 chat models               |
+| Cloudflare Workers AI | About 8,600,000      | 10,000 Neurons a day, spent on Llama 3.1 8B output |
+| Gonka Broker          | At least 1,000,000   | Monthly grant                                      |
+| Aion Labs             | 600,000              | 20,000 tokens a day                                |
+| IBM watsonx.ai        | 300,000              | Monthly Lite allowance                             |
+| **Total**             | **About 58,500,000** |                                                    |
+
+One-time grants add about 117.5 million tokens: Inception 100 million, Baichuan 10 million, Alibaba Cloud Model Studio 6 million (1 million on each of six language models), Tencent TokenHub at least 1 million (1 million per language model), and Volcengine Ark 500,000. Not counted are tiers whose limits appear only after sign-in (Google Gemini API, Mistral AI, NVIDIA API Catalog, OpenCode Console, Z.AI, and Zhipu BigModel), tiers that cap requests rather than tokens (Cohere, Kilo Code, ModelScope, OpenRouter, OVHcloud AI Endpoints, Requesty, SEA-LION, and SenseNova), dollar credits, and embedding grants.
+
+An AI gateway in front of several providers lets one application use them together through one OpenAI-compatible endpoint and move to another provider when one hits its limit.
 
 [Bifrost](https://github.com/maximhq/bifrost#key-features) is an open source gateway (`Apache-2.0`, `Go`) that supports many of the providers in this list, including Gemini, Groq, Mistral, Cohere, Cerebras, Cloudflare Workers AI, Nebius, and OpenRouter ([supported providers](https://docs.getbifrost.ai/providers/supported-providers/overview#provider-support-matrix)), and reaches other OpenAI-compatible endpoints as custom providers ([custom providers](https://docs.getbifrost.ai/providers/custom-providers#base-provider-types)). When a provider fails, including on a `429` rate limit or an exhausted quota, Bifrost retries it and then moves the request to the next provider in your fallback chain ([retries and fallbacks](https://docs.getbifrost.ai/features/retries-and-fallbacks#overview)). Its complexity router sorts each request into a Simple, Medium, or Complex tier, so routing rules can send simple requests to a small free model and save the larger models' limited quota for harder ones ([complexity router](https://docs.getbifrost.ai/features/complexity-router#overview)).
 
@@ -117,15 +134,15 @@ Free plan with $1 of credit every four weeks for small open models.
 
 Daily free allocation of Neurons, Cloudflare's compute unit, on the Workers Free and Paid plans.
 
-| Field             | Detail                                                                                                                                                                                                                                                                                                                         |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Free              | 10,000 Neurons a day on both Workers Free and Workers Paid, reset at 00:00 UTC. On Workers Free, requests past the allocation fail ([pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/#:~:text=Our%20free%20allocation%20allows%20anyone%20to%20use%20a%20total%20of%2010%2C000%20Neurons%20per%20day)). |
-| Models            | Text generation (for example `@cf/meta/llama-3.3-70b-instruct-fp8-fast` and `@cf/openai/gpt-oss-120b`), embeddings, reranking, image generation (`@cf/black-forest-labs/flux-1-schnell`), speech-to-text, and text-to-speech, each with its own Neuron rate on the pricing page. Some newer models need a paid billing method. |
-| Limits            | Text generation 300 RPM, text embeddings 3,000 RPM, and text-to-image 720 RPM by default; local inference with Wrangler counts toward the same limits ([limits](https://developers.cloudflare.com/workers-ai/platform/limits/#text-generation)).                                                                               |
-| Requires          | Cloudflare account and an API token or a Workers binding. Whether Workers Free needs a card is not stated.                                                                                                                                                                                                                     |
-| OpenAI-compatible | Yes, `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` for chat completions and embeddings ([OpenAI compatibility](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/#chat-completions-and-embeddings)).                                                                       |
-| Data use          | Customer content is not used to train models, and standard inference has zero data retention ([data usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/#our-commitments-for-customer-content)).                                                                                                           |
-| Verified          | 2026-11-03                                                                                                                                                                                                                                                                                                                     |
+| Field             | Detail                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Free              | 10,000 Neurons a day on both Workers Free and Workers Paid, reset at 00:00 UTC. On Workers Free, requests past the allocation fail ([pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/#:~:text=Our%20free%20allocation%20allows%20anyone%20to%20use%20a%20total%20of%2010%2C000%20Neurons%20per%20day)).                                                                                          |
+| Models            | Text generation (for example `@cf/meta/llama-3.3-70b-instruct-fp8-fast` and `@cf/openai/gpt-oss-120b`), embeddings, reranking, image generation (`@cf/black-forest-labs/flux-1-schnell`), speech-to-text, and text-to-speech, each with its own Neuron rate on the pricing page; `@cf/meta/llama-3.1-8b-instruct-fp8-fast` uses 34,868 Neurons per million output tokens. Some newer models need a paid billing method. |
+| Limits            | Text generation 300 RPM, text embeddings 3,000 RPM, and text-to-image 720 RPM by default; local inference with Wrangler counts toward the same limits ([limits](https://developers.cloudflare.com/workers-ai/platform/limits/#text-generation)).                                                                                                                                                                        |
+| Requires          | Cloudflare account and an API token or a Workers binding. Whether Workers Free needs a card is not stated.                                                                                                                                                                                                                                                                                                              |
+| OpenAI-compatible | Yes, `https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1` for chat completions and embeddings ([OpenAI compatibility](https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/#chat-completions-and-embeddings)).                                                                                                                                                                |
+| Data use          | Customer content is not used to train models, and standard inference has zero data retention ([data usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/#our-commitments-for-customer-content)).                                                                                                                                                                                                    |
+| Verified          | 2026-11-03                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### Cohere
 
@@ -315,6 +332,20 @@ Free models on the Kilo Gateway, usable without an account.
 | OpenAI-compatible | Yes, `https://ai-gateway.kilo.ai/api/v1` ([gateway](https://kilo.ai/docs/gateway#key-features)).                                                                                                                            |
 | Data use          | Free models may route to providers that log prompts and use them to improve their services, so Kilo warns against sending personal or confidential data (models and providers page).                                        |
 | Verified          | 2026-11-03                                                                                                                                                                                                                  |
+
+### OpenCode Console
+
+Free models inside the OpenCode coding agent, served through OpenCode's model gateway, which was formerly called OpenCode Zen.
+
+| Field             | Detail                                                                                                                                                                                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Free              | Ten chat models and one decision model are priced Free "for a limited time", with no end date stated ([models](https://opencode.ai/v2/docs/console/models/#free-models)).                                                                                                                               |
+| Models            | Big Pickle and Pulse Alpha Free (stealth models), GLM-5.3-Flash Free, DeepSeek V4.1 Flash Free, Beam Free, Flint 40B Free, MiMo-V2.6-Flash Free, Nemotron 3 Ultra Free, Nemotron 3.5 Lightning Free, Nemotron 3.5 Super VL Free, and Jev 1.13 Free, per the pricing table on the same page.             |
+| Limits            | Not published.                                                                                                                                                                                                                                                                                          |
+| Requires          | The OpenCode client. The docs say free-tier chat models require OpenCode, so a Console API key in another client reaches only paid models. Pulse Alpha Free and Beam Free are not available in some countries.                                                                                          |
+| OpenAI-compatible | Paid models only, `https://opencode.ai/inference/openai/v1/chat/completions`.                                                                                                                                                                                                                           |
+| Data use          | Varies by model. GLM-5.3-Flash Free and DeepSeek V4.1 Flash Free use zero-retention providers that do not train on your data. For Big Pickle, Pulse Alpha Free, Flint 40B Free, MiMo-V2.6-Flash Free, and the Nemotron models, the team uses the free period to collect feedback and improve the model. |
+| Verified          | 2026-11-03                                                                                                                                                                                                                                                                                              |
 
 ### OpenRouter
 
