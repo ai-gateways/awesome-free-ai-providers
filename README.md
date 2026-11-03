@@ -176,7 +176,7 @@ Free tier of the Gemini Developer API on the Flash family, Gemma, and some embed
 
 ### Groq
 
-Generous free plan on GroqCloud with its own per-model limits.
+Free plan on GroqCloud with its own per-model limits.
 
 | Field             | Detail                                                                                                                                                                                                                                                                                               |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
