@@ -590,7 +590,7 @@ def pr_level_findings(pr, files, base, head, added, changed, removed):
         out.append(("warning", "Changes files other than README.md: " + ", ".join(f"`{esc(o)}`" for o in other) + ". A maintainer will check these by hand."))
     if len(added) > 1:
         out.append(("warning", f"Adds {len(added)} providers. Open one pull request per provider so each can be reviewed on its own."))
-    if not re.match(r"^(Add|Update|Remove|Move|Fix|Rename) \S", pr.get("title") or ""):
+    if not re.match(r"^(Add|Update|Remove|Move|Fix|Rename):? \S", pr.get("title") or ""):
         out.append(("warning", "Use a title such as `Add Name`, `Update Name limits`, or `Remove Name`."))
     body = (pr.get("body") or "").lower()
     if (added or changed) and not re.search(r"affiliation|i work (on|at|for)|i am (the|a) (author|maintainer|founder|employee)|i maintain|not affiliated|no affiliation|no connection", body):
