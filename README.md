@@ -49,8 +49,8 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 | [Jina AI](#jina-ai)                                       | 10M tokens per key                        | Not stated  | Embeddings only   |
 | [Kilo Code](#kilo-code)                                   | Free models, no account needed            | No          | Yes               |
 | [Liquid AI](#liquid-ai)                                   | $2 credit                                 | Not stated  | Not stated        |
-| [Merkium](#merkium) | Free models, 30 RPM per key | No | Yes |
-| [Microsoft Azure](#microsoft-azure)                    | $200 credit for 30 days                     | Yes         | Yes               |
+| [Merkium](#merkium)                                       | Free models, 30 RPM per key               | No          | Yes               |
+| [Microsoft Azure](#microsoft-azure)                       | $200 credit for 30 days                   | Yes         | Yes               |
 | [Mistral AI](#mistral-ai)                                 | Free mode                                 | No          | Not stated        |
 | [ModelScope](#modelscope)                                 | 2,000 calls a day                         | Not stated  | Yes               |
 | [Nebius](#nebius)                                         | $25 credit                                | Yes         | Yes               |
@@ -207,15 +207,15 @@ Lite plan with a small monthly allowance of foundation model tokens.
 
 Current Merkium chat models are free on the API, with no card and no billing account.
 
-| Field             | Detail |
-| ----------------- | ------ |
-| Free              | The current models are free, with no charge per request or token, and the pricing page says the free tier does not expire. Models released later may be paid ([pricing](https://www.merkium.nl/docs/pricing#free-tier-title)). |
-| Models            | Merkium's own models: `ganymede-1.1` (1,000,000-token context, up to 16,384 output tokens, reasoning, tool calling), plus the Pluto and Ceres families ([models](https://www.merkium.nl/docs/models#available-models-title)). |
-| Limits            | 30 RPM per API key, enforced as one request every two seconds. No daily limit is published ([rate limits](https://www.merkium.nl/docs/rate-limits#limit-title)). |
-| Requires          | Account and an API key from the Console at chat.merkium.nl. No credit card, per the pricing page. |
-| OpenAI-compatible | Yes, `https://chat.merkium.nl/api/v1` ([docs](https://www.merkium.nl/docs)). |
+| Field             | Detail                                                                                                                                                                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Free              | The current models are free, with no charge per request or token, and the pricing page says the free tier does not expire. Models released later may be paid ([pricing](https://www.merkium.nl/docs/pricing#free-tier-title)).        |
+| Models            | Merkium's own models: `ganymede-1.1` (1,000,000-token context, up to 16,384 output tokens, reasoning, tool calling), plus the Pluto and Ceres families ([models](https://www.merkium.nl/docs/models#available-models-title)).         |
+| Limits            | 30 RPM per API key, enforced as one request every two seconds. No daily limit is published ([rate limits](https://www.merkium.nl/docs/rate-limits#limit-title)).                                                                      |
+| Requires          | Account and an API key from the Console at chat.merkium.nl. No credit card, per the pricing page.                                                                                                                                     |
+| OpenAI-compatible | Yes, `https://chat.merkium.nl/api/v1` ([docs](https://www.merkium.nl/docs#:~:text=chat.merkium.nl%2Fapi%2Fv1)).                                                                                                                       |
 | Data use          | The privacy policy says chats are never used to train, fine-tune, or evaluate Merkium models ([privacy](https://www.merkium.nl/privacy#:~:text=We%20never%20train%20on%20your%20chats)). It does not address API requests separately. |
-| Verified          | 2026-11-09 |
+| Verified          | 2026-11-09                                                                                                                                                                                                                            |
 
 ### Mistral AI
 
