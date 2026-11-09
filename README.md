@@ -50,6 +50,7 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 | [Kilo Code](#kilo-code)                                   | Free models, no account needed            | No          | Yes               |
 | [Liquid AI](#liquid-ai)                                   | $2 credit                                 | Not stated  | Not stated        |
 | [Merkium](#merkium) | Free models, 30 RPM per key | No | Yes |
+| [Microsoft Azure](#microsoft-azure)                    | $200 credit for 30 days                     | Yes         | Yes               |
 | [Mistral AI](#mistral-ai)                                 | Free mode                                 | No          | Not stated        |
 | [ModelScope](#modelscope)                                 | 2,000 calls a day                         | Not stated  | Yes               |
 | [Nebius](#nebius)                                         | $25 credit                                | Yes         | Yes               |
