@@ -70,6 +70,7 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 | [SiliconFlow](#siliconflow)                               | $1 credit                                 | Not stated  | Yes               |
 | [SiliconFlow China](#siliconflow-china)                   | Free models and a 16 CNY voucher          | Not stated  | Yes               |
 | [Speechmatics](#speechmatics)                             | $100 credit for 12 months                 | No          | Not stated        |
+| [Synap402](#synap402)                                     | 100,000 tokens a day                      | No          | Yes               |
 | [Tencent TokenHub](#tencent-tokenhub)                     | 1M tokens per model for 1 year            | Not stated  | Yes               |
 | [Upstage](#upstage)                                       | $10 credit                                | Not stated  | Yes               |
 | [Volcengine Ark](#volcengine-ark)                         | Free trial quota per model                | Not stated  | Yes               |
@@ -79,17 +80,18 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 
 ## Combining Free Tiers
 
-Each free tier has its own limits, and most are small: Groq's free plan allows 1,000 requests a day per model, OpenRouter's free models 50 a day without purchased credits, and SambaNova's free tier 20. Only six providers in this list publish their free limits in tokens. Over a 30-day month, they add up to about 58.5 million tokens:
+Each free tier has its own limits, and most are small: Groq's free plan allows 1,000 requests a day per model, OpenRouter's free models 50 a day without purchased credits, and SambaNova's free tier 20. Only seven providers in this list publish their free limits in tokens. Over a 30-day month, they add up to about 61.5 million tokens:
 
 | Provider              | Free tokens a month  | Basis                                              |
 | --------------------- | -------------------- | -------------------------------------------------- |
 | SambaNova Cloud       | 30,000,000           | 200,000 TPD on each of 5 models                    |
 | Groq                  | 18,000,000           | 200,000 TPD on each of 3 chat models               |
 | Cloudflare Workers AI | About 8,600,000      | 10,000 Neurons a day, spent on Llama 3.1 8B output |
+| Synap402              | 3,000,000            | 100,000 tokens a day                               |
 | Gonka Broker          | At least 1,000,000   | Monthly grant                                      |
 | Aion Labs             | 600,000              | 20,000 tokens a day                                |
 | IBM watsonx.ai        | 300,000              | Monthly Lite allowance                             |
-| **Total**             | **About 58,500,000** |                                                    |
+| **Total**             | **About 61,500,000** |                                                    |
 
 One-time grants add about 117.5 million tokens: Inception 100 million, Baichuan 10 million, Alibaba Cloud Model Studio 6 million (1 million on each of six language models), Tencent TokenHub at least 1 million (1 million per language model), and Volcengine Ark 500,000. Not counted are tiers whose limits are not public (Cline, Google Gemini API, Mistral AI, NVIDIA API Catalog, OpenCode Console, Z.AI, and Zhipu BigModel), tiers that cap requests rather than tokens (Cohere, Kilo Code, ModelScope, OpenRouter, OVHcloud AI Endpoints, Requesty, SEA-LION, and SenseNova), dollar credits, and embedding grants.
 
@@ -272,6 +274,20 @@ Free API from AI Singapore for proof-of-concept use of its Southeast Asian langu
 | OpenAI-compatible | Yes, `https://api.sea-lion.ai/v1`.                                                                                                                                                                   |
 | Data use          | AI Singapore may use content to develop and improve its services. No opt-out is stated ([terms](https://sea-lion.ai/terms-of-use/#:~:text=AI%20Singapore%2C%20a%20national%20research%20programme)). |
 | Verified          | 2026-11-03                                                                                                                                                                                           |
+
+### Synap402
+
+Free daily allowance for the Qwen3 Coder 30B model on an OpenAI-compatible API.
+
+| Field             | Detail                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Free              | 100,000 tokens and 50 requests per account each day, with no card required ([live free-tier status](https://synap402.com/api/account/free-tier)).                                                                                                                                                                                                             |
+| Models            | `qwen3-coder-30b`, served on Linkrra-operated GPUs, per the same live status.                                                                                                                                                                                                                                                                                 |
+| Limits            | 100,000 tokens and 50 requests per day, 10 requests per minute per key, and 4,096 output tokens per request.                                                                                                                                                                                                                                                  |
+| Requires          | Google or email sign-in. One allowance applies per account or mailbox and per network address, whichever is reached first.                                                                                                                                                                                                                                    |
+| OpenAI-compatible | Yes, `https://synap402.com/v1` ([API quickstart](https://synap402.com/llms.txt#:~:text=Base%20URL%20for%20OpenAI-compatible%20clients)).                                                                                                                                                                                                                      |
+| Data use          | Prompt and completion text is not retained or used for training. Per-request token counts, model, and timestamp are recorded for billing, with documented exceptions for batch files and independent operators ([privacy policy](https://synap402.com/privacy.html#:~:text=We%20do%20not%20retain%20prompt%20or%20completion%20text%20for%20API%20requests)). |
+| Verified          | 2026-11-14                                                                                                                                                                                                                                                                                                                                                    |
 
 ### Z.AI
 
