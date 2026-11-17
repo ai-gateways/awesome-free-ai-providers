@@ -1,3 +1,5 @@
+                                                                                                                                                                                             |
+
 # Awesome Free AI Providers [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Many hosted AI model APIs can be used at no cost through a permanent free tier, free models, or a signup credit, each with its own limits, requirements, and data-use terms.
@@ -49,6 +51,7 @@ Free offers change often. This list reflects the providers' pages as of **Novemb
 | [Jina AI](#jina-ai)                                       | 10M tokens per key                        | Not stated  | Embeddings only   |
 | [Kilo Code](#kilo-code)                                   | Free models, no account needed            | No          | Yes               |
 | [Liquid AI](#liquid-ai)                                   | $2 credit                                 | Not stated  | Not stated        |
+| [Merkium](#merkium)                                        | Ganymede 1.1 at $0                      | Not stated  | Yes              |
 | [Microsoft Azure](#microsoft-azure)                       | $200 credit for 30 days                   | Yes         | Yes               |
 | [Mistral AI](#mistral-ai)                                 | Free mode                                 | No          | Not stated        |
 | [ModelScope](#modelscope)                                 | 2,000 calls a day                         | Not stated  | Yes               |
@@ -201,6 +204,18 @@ Lite plan with a small monthly allowance of foundation model tokens.
 | OpenAI-compatible | Only through the model gateway, which routes to third-party providers you configure ([model gateway](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-model-gateway-use.html?context=wx#ways-to-work)).                                                                 |
 | Data use          | IBM does not use your work to improve its models and does not log foundation model input ([privacy and security](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-security.html?context=wx#foundation-model-privacy-and-security)).                                     |
 | Verified          | 2026-11-03                                                                                                                                                                                                                                                                                 |
+
+### Merkium
+
+Ganymede 1.1 is a free model served through an OpenAI-compatible API.
+
+| Field             | Detail                                                                                                                                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Free              | Ganymede 1.1 is offered at $0 ([pricing](https://www.merkium.nl/pricing)).                                                                                                                                               |
+| Models            | Ganymede 1.1 (`ganymede-1.1`), with 1M token context, 16K max output, tool calling, streaming, image input, and reasoning always on ([technical report](https://www.merkium.nl/research/ganymede-1-1-technical-report)). |
+| Requires          | Account. API keys are created at `https://chat.merkium.nl` ([key creation](https://chat.merkium.nl)).                                                                                                                    |
+| OpenAI-compatible | Yes, `https://chat.merkium.nl/api/v1` ([docs](https://www.merkium.nl/docs)).                                                                                                                                             |
+| Verified          | 2026-11-17                                                                                                                                               |
 
 ### Mistral AI
 
