@@ -202,6 +202,17 @@ Lite plan with a small monthly allowance of foundation model tokens.
 | Data use          | IBM does not use your work to improve its models and does not log foundation model input ([privacy and security](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-security.html?context=wx#foundation-model-privacy-and-security)).                                     |
 | Verified          | 2026-11-03                                                                                                                                                                                                                                                                                 |
 
+### RawMind AI
+
+Free uncensored web chat and neural network with reasoning, text, image, and video generation.
+
+| Field             | Detail |
+| ----------------- | ------ |
+| Provider          | [RawMind](https://rawmind.app) |
+| Free offer        | Free uncensored chat, reasoning, and multimodal generation |
+| Sign-up           | Web access without payment requirement |
+| Models            | Uncensored reasoning and generative models |
+
 ### Mistral AI
 
 Free mode for new accounts, with API keys and no card, at the lowest rate limits.
